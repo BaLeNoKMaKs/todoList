@@ -1,0 +1,129 @@
+
+.task-wrapper{
+   display: flex;
+}
+.task-block{
+   margin-bottom: 40px;
+   &__info{
+      display: flex;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #F2F2F2;
+      margin-bottom: 30px;
+   }
+   &__title{
+      margin-right: 15px;
+      font-weight: 700;
+      font-size: 32px;
+      color: #64C4ED;
+      background: transparent;
+      width: 100%;
+   }
+   &__icon{
+      height: 15px;
+      cursor: pointer;
+      width: 15px;
+      &:hover{
+         svg{
+            path{
+               fill: black;
+            }
+         }
+      }
+      svg{
+         max-width: 100%;
+         path{
+            transition: fill 0.4s ease;
+         }
+      }
+   }
+   &__tasks{
+      
+   }
+   &__task{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &:not(:last-child){
+         margin-bottom:   20px;
+      }
+      &:hover  .task-block__fake-checkbox{
+         background: #E8E8E8;
+         svg{
+            opacity: 1;
+            visibility: visible;
+         }
+      }
+      
+      
+   }
+   &__checkbox{
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      appearance: none;
+      &:checked + .task-block__fake-checkbox{
+         background: #4DD599;
+         border: 2px solid #4DD599;
+         svg{
+            opacity: 1;
+            visibility: visible;
+            path{
+               stroke: #fff;
+            }
+         }
+      }
+   }
+   &__fake-checkbox{
+      position: relative;
+      display: inline-block;
+      min-width: 20px;
+      min-height: 20px;
+      background: transparent;
+      border-radius: 50%;
+      border: 2px solid #E8E8E8;
+      margin-right: 15px;
+      transition: all 0.4s ease;
+      & svg{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         opacity: 0;
+         visibility: hidden;
+         transition: background-color 0.4s ease;
+         path{
+            transition: stroke 0.4s ease;
+            stroke:  #B3B3B3;
+         }
+      }
+   }
+   &__text{
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+   }
+   &__actions{
+      margin-left: auto;
+      display: flex;
+   }
+   &__action{
+      &:not(:last-child){
+         margin-right: 10px;
+      }
+       &:hover{
+         svg{
+            path{
+               transition: fill 0.4s ease;
+            }
+         }
+      }
+      &:hover{
+         svg{
+            path{
+               fill: #000;
+            }
+         }
+      }
+   }
+}

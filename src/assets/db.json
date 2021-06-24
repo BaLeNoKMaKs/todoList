@@ -1,0 +1,107 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "text": "Покупки",
+      "colorId": 2
+    },
+    {
+      "text": "dsfsdf",
+      "colorId": 7,
+      "id": 6
+    },
+    {
+      "text": "folder",
+      "colorId": 4,
+      "id": 7
+    },
+    {
+      "text": "purple",
+      "colorId": 8,
+      "id": 8
+    },
+    {
+      "text": "ffff",
+      "colorId": 3,
+      "id": 9
+    }
+  ],
+  "tasks": [
+    {
+      "listId": 6,
+      "text": "dfsdf",
+      "completed": "on",
+      "id": 9
+    },
+    {
+      "listId": 7,
+      "text": "adsfasdf",
+      "completed": true,
+      "id": 10
+    },
+    {
+      "listId": 7,
+      "text": "34234324234",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "listId": 7,
+      "text": "qfqwfcqdfc",
+      "completed": "on",
+      "id": 12
+    },
+    {
+      "listId": 1,
+      "text": "eee",
+      "completed": true,
+      "id": 13
+    },
+    {
+      "listId": 7,
+      "text": "vvvv",
+      "completed": false,
+      "id": 14
+    },
+    {
+      "listId": 1,
+      "text": "asdfasdf",
+      "completed": true,
+      "id": 15
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD"
+    },
+    {
+      "id": 6,
+      "hex": "#EE6464"
+    },
+    {
+      "id": 7,
+      "hex": "#e5ee64"
+    },
+    {
+      "id": 8,
+      "hex": "#ee64dc"
+    }
+  ]
+}

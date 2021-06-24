@@ -1,0 +1,45 @@
+.add-task{
+   margin-top: 20px;
+   &__icon-menu{
+      cursor: pointer;
+      display: flex;
+      &:hover .add-task__text{
+         color: #000;
+      }
+      &:hover .add-task__icon{
+        svg{
+         path{
+            stroke: #000;
+         }
+      }
+      }
+   }
+   &__icon{
+   margin-right: 10px;
+      svg{
+         path{
+            stroke: #868686;
+            transition: stroke 0.4s ease;
+         }
+      }
+   }
+   &__text{
+      color: #868686;
+      transition: color 0.4s ease;
+   }
+   &__add-menu{
+
+      display: flex;
+      flex-direction: column;
+       & input{
+         margin-bottom: 15px;
+      }
+   }
+   &__btns{
+      display: flex;
+      & button:nth-child(1){
+         margin-right: 15px;
+      }
+   }
+   
+}
